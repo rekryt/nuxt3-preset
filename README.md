@@ -1,7 +1,7 @@
 # Nuxt 3 Starter Preset
 - Nuxt3
+- Eslint (with eslint-config-prettier)
 - @nuxt/tailwindcss3 (dark mode example)
-- tailwindcss2 (for IDEA)
 - nuxt-pwa
 
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.

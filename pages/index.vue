@@ -4,7 +4,6 @@ export default {
         const count = ref(1);
         const incCount = () => (count.value = count.value + 1);
         const double = computed(() => count.value * 2);
-
         return { count, incCount, double };
     },
 };
@@ -12,7 +11,7 @@ export default {
 
 <template>
     <div class="cardList">
-        <div class="cardList-wrapper" v-for="i in 12" :key="i">
+        <div v-for="i in 12" :key="i" class="cardList-wrapper">
             <div class="cardList-item">
                 <img
                     class="cardList-itemImage"
