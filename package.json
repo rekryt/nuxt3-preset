@@ -6,19 +6,23 @@
         "generate": "nuxt generate",
         "preview": "nuxt preview",
         "postinstall": "nuxt prepare",
-        "start": "node .output/server/index.mjs"
+        "start": "node .output/server/index.mjs",
+        "test": "vitest --run --reporter verbose --globals",
+        "lint": "eslint --ext .ts,.js,.vue ."
     },
     "devDependencies": {
+        "@nuxt/test-utils": "^3.8.0",
         "@kevinmarrec/nuxt-pwa": "^0.17.0",
         "@nuxtjs/tailwindcss": "^6.8.0",
         "@typescript-eslint/eslint-plugin": "^6.8.0",
         "@typescript-eslint/parser": "^6.8.0",
         "autoprefixer": "^10.4.16",
-        "eslint": "^8.51.0",
+        "eslint": "^8.52.0",
         "eslint-config-prettier": "^9.0.0",
         "eslint-plugin-nuxt": "^4.0.0",
+        "eslint-plugin-vitest": "^0.3.2",
         "eslint-plugin-vue": "^9.17.0",
-        "nuxt": "3.7.4",
+        "nuxt": "3.8.0",
         "prettier": "^3.0.3",
         "sass": "^1.69.4",
         "vite-plugin-eslint": "^1.8.1"
